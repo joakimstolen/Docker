@@ -1,5 +1,12 @@
 language: java
 
+# Details of the machine types on Travis to run the CI on
+dist: xenial
+os: linux
+
+# The JDK we need for compiling
+jdk:
+  - openjdk11
 services:
   - docker
 
