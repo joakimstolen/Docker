@@ -19,6 +19,11 @@ public class PathController {
         return "Hello to you! ";
     }
 
+    @GetMapping(path = "/pr")
+    public String pr(){
+        return "Does the pull request and travis push work?";
+    }
+
     @GetMapping(path = "/creator")
     public String creator(){
         return "Hello creator, does this work?! ";
