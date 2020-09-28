@@ -4,7 +4,7 @@ services:
 
 env:
   global:
-    - GCP_PROJECT_ID=DevOps05
+    - PROJECT_ID=DevOps05
     - IMAGE=gcr.io/DevOps05/docker
     - CLOUD_RUN_SERVICE=DevOps05
     - CLOUD_RUN_REGION=us-central1
