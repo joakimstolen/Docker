@@ -4,9 +4,9 @@ services:
 
 env:
   global:
-    - PROJECT_ID=DevOps05
-    - IMAGE=gcr.io/DevOps05/docker
-    - CLOUD_RUN_SERVICE=DevOps05
+    - GCP_PROJECT_ID=devops05-290206
+    - IMAGE=gcr.io/devops05-290206/docker
+    - CLOUD_RUN_SERVICE=devops05-290206
     - CLOUD_RUN_REGION=us-central1
     - CLOUDSDK_CORE_DISABLE_PROMPTS=1
 
@@ -16,7 +16,7 @@ before_install:
   - source "$HOME/google-cloud-sdk/path.bash.inc"
   - gcloud auth activate-service-account --key-file=google-key.json
   - gcloud auth configure-docker
-  - gcloud config set project "${PROJECT_ID}"
+  - gcloud config set project "${GCP_PROJECT_ID}"
   - gcloud components install beta
 
 install: true # no-op
