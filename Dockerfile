@@ -13,7 +13,6 @@ RUN mvn package -DskipTests
 
 FROM openjdk:8-jdk-alpine
 
-
 # Copy the jar to the production image from the builder stage.
 COPY --from=builder /app/target/Docker-*.jar /Docker-0.0.1-SNAPSHOT.jar
 
