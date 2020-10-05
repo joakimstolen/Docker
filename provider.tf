@@ -1,7 +1,6 @@
 provider "google" {
   credentials = file("google-key.json")
-  project     = "devopscube-demo"
+  project     = "devops05-290206"
   region      = "us-central1"
   zone        = "us-central1-c"
 }
-
