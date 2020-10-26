@@ -1,11 +1,12 @@
 resource "google_cloud_run_service" "default" {
   name     = "cloudrun-srv"
   location = "us-central1"
+  project = "devops05-290206"
 
   template {
     spec {
       containers {
-        image = "gcr.io/cloudrun/hello"
+        image = "gcr.io/devops05-290206/docker@sha256:d0b488c6dbb6f46b75abc1d3f7fe411d11081727445335c6a8b8582b784d28c6"
       }
     }
   }
