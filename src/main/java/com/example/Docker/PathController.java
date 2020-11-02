@@ -49,7 +49,7 @@ public class PathController {
 
     @GetMapping(path = "/hello")
     public String ping(){
-        logger.warn("Homepage is almost empty");
+        logger.warn("Homepage is almost empty, hmm");
         return "Hello to you! ";
     }
 
